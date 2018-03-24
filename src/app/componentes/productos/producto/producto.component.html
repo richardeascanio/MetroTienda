@@ -1,0 +1,47 @@
+<div class="card mt-5">
+  <div class="card-body">
+      <h6 class="text-center">Agregar un Producto</h6>
+    <form #productoForm="ngForm" (ngSubmit)="onSubmit(productoForm)">
+      
+      <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productoService.productoSeleccionado.$key"> 
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="nombre" #nombre="ngModel"
+        [(ngModel)]="productoService.productoSeleccionado.nombre" placeholder="Nombre del Producto">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="categoria" #categoria="ngModel"
+        [(ngModel)]="productoService.productoSeleccionado.categoria" placeholder="Categoria del Producto">
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="locacion" #locacion="ngModel"
+        [(ngModel)]="productoService.productoSeleccionado.locacion" placeholder="Locación del Producto">
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="precio">Precio</label>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input type="text" class="form-control" name="precio" #precio="ngModel"
+          [(ngModel)]="productoService.productoSeleccionado.precio" placeholder="Precio del Producto">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-plus-circle"></i> Agregar Producto
+        </button>
+      </div>
+      <div class="from-group">
+        <button class="btn btn-secondary" type="reset" (click)="resetForm(productoForm)">
+            <i class="fas fa-sync-alt"></i> Reset
+        </button>
+      </div>
+      
+    </form>
+  </div>  
+</div>
