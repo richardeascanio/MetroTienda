@@ -4,5 +4,6 @@ export class Producto {
     nombre: string;
     categoria: string;
     locacion: string;
-    precio: number
+    precio: number;
+    foto: ImageData;
 }

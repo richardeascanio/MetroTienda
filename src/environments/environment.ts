@@ -14,4 +14,5 @@ export const environment = {
     storageBucket: "metrotienda-alexander.appspot.com",
     messagingSenderId: "530867490657"
   }
+  
 };
