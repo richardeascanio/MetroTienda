@@ -5,5 +5,9 @@ export class Producto {
     categoria: string;
     locacion: string;
     precio: number;
-    foto: ImageData;
+    createdAt: Date = new Date();
+    foto: File
+
+    constructor(){    }
 }
+

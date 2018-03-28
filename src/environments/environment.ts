@@ -6,13 +6,15 @@
 export const environment = {
   production: false,
 
-  firebase:{
+   firebase:{
     apiKey: "AIzaSyCCjQZa3Fjkd3ePbl_Lk6eVeeP3M5_5keU",
     authDomain: "metrotienda-alexander.firebaseapp.com",
     databaseURL: "https://metrotienda-alexander.firebaseio.com",
     projectId: "metrotienda-alexander",
-    storageBucket: "metrotienda-alexander.appspot.com",
+    storageBucket: "gs://metrotienda-alexander.appspot.com/",
     messagingSenderId: "530867490657"
   }
-  
+
+   
 };
+var storage = firebase.storage();
