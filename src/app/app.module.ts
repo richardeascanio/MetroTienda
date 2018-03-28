@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 
@@ -32,7 +33,10 @@ import { ProductoService } from './servicios/producto.service';
     AngularFireDatabaseModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCu4ScxPAFxEZb2Pv801JUBQHGwXnHiey0'
+    })
   ],
   providers: [
     ProductoService

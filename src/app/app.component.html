@@ -19,4 +19,12 @@
   </div>
 </nav>
 
+
+
 <app-productos></app-productos>
+
+<section class= "mapa">
+  <agm-map [latitude]="lat" [longitude]="lng" (mapClick)="click($event)">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</section>
