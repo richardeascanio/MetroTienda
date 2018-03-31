@@ -5,5 +5,5 @@ export class Producto {
     categoria: string;
     locacion: string;
     precio: number;
-    foto: ImageData;
+    Imagenes: File;
 }

@@ -25,7 +25,7 @@ import { ProductoService } from './servicios/producto.service';
     AppComponent,
     ProductosComponent,
     ListaProductosComponent,
-    ProductoComponent
+    ProductoComponent,
   ],
   imports: [
     BrowserModule,
