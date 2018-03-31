@@ -41,4 +41,11 @@ export class ListaProductosComponent implements OnInit {
     }
   }
 
+    onSelect(event) {
+    let query = null;
+    if (event.value == "USA") {
+      query = this.productoService.getListaconFiltro("USA");
+    }
+  }
+
 }
