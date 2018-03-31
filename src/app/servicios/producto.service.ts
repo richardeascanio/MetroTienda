@@ -35,4 +35,8 @@ export class ProductoService {
   eliminarProducto($key: string){
     this.listaProductos.remove($key);
   }
+
+  getListaconFiltro(filtro: string) {
+    return this.listaProductos = this.firebase.list('/productos', ref => ref.orderByChild('locacion').equalTo(filtro));
+  }
 }
